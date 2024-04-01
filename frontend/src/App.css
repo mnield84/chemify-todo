@@ -1,0 +1,53 @@
+.todo-list{
+  list-style: none;
+  text-align: left;
+  padding-left: 15px;
+}
+
+.todo-container{
+  width: 570px;
+  border-radius: 8px;
+  box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.15);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.todo-list{
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
+.todo-list-item{
+  width: 100%;
+  margin-bottom: 15px;
+}
+.todo-list-item:last-of-type{
+  margin-bottom: 0;
+}
+
+.todo-controls{
+  margin-left: auto;
+}
+
+
+.mantine-List-itemWrapper{
+  width: 100%;
+  border: 1px solid #E2E6EF;
+  border-radius: 8px;
+}
+
+.mantine-List-itemLabel{
+  width: 100%;
+  padding: 18px 14px;
+}
+
+.todo-action-icon{
+  margin-left: auto;
+}
+
+.create-todo-button{
+  margin-left: auto;
+}
+
+
