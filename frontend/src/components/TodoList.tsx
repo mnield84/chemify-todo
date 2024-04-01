@@ -24,12 +24,12 @@ type TodoListProps = {
 
 const TodoList: React.FC<TodoListProps> = ({ todos, onUpdate, onDelete }) => {
   const [editId, setEditId] = useState<string | null>(null);
-  const [editTitle, setEditTitle] = useState<string>("");
 
   const {
     register,
     handleSubmit,
     reset,
+    setValue,
     formState: { errors },
   } = useForm<Todo>({
     resolver: zodResolver(todoSchema),
@@ -37,7 +37,7 @@ const TodoList: React.FC<TodoListProps> = ({ todos, onUpdate, onDelete }) => {
 
   const handleEdit = (todo: Todo) => {
     setEditId(todo.id);
-    setEditTitle(todo.title);
+    setValue("title", todo.title);
   };
 
   const handleSave: SubmitHandler<Todo> = async (data) => {
@@ -95,7 +95,6 @@ const TodoList: React.FC<TodoListProps> = ({ todos, onUpdate, onDelete }) => {
                   {...register("title")}
                   label="Title"
                   error={errors.title?.message}
-                  defaultValue={editTitle}
                 />
                 <Flex align="center" mt="sm">
                   <Button type="submit">Save</Button>
