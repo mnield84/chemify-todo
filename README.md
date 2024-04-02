@@ -15,8 +15,6 @@ In the project directory, you can run the following scripts:
 - **`npm run generate:prisma`**: Generates the Prisma client, essential for interacting with the database through Prisma.
 - **`npm run prisma:seed`**: Seeds the database using the Prisma seed script, located in the `prisma/seed.ts` file.
 - **`npm run prisma:studio`**: Opens Prisma Studio, a visual editor for your database, allowing for easy manipulation and querying of data.
-- **`npm run install:frontend`**: Installs the dependencies required for the frontend.
-- **`npm run install:all`**: Runs a series of commands to set up both backend and frontend dependencies, generate Prisma client, and seed the database. This is a comprehensive setup command to prepare the entire application for development.
 - **`npm run dev:backend`**: Starts the backend development server.
 - **`npm run dev:frontend`**: Launches the frontend development server.
 - **`npm run cy:open`**: Launches cypress testing suite.
@@ -39,10 +37,16 @@ cd chemify-todo
 
 ## Getting Started
 
-To get started with developing on chemify-mn, you can set up the entire project by running at the root level of the project:
+To get started with developing on chemify-mn, do the following:
 
 ```bash
-npm run install:all
+npm install
+npm run install:backend
+```
+
+```bash
+cd frontend
+npm install
 ```
 
 Once that has run if you navigate to the frontend directory and create a .env file and paste the following:
@@ -54,6 +58,7 @@ VITE_API_BASE_URL=http://localhost:8080
 Once the setup is complete, you can start the development servers for both frontend and backend by running the following commmand at the root of the project.
 
 ```bash
+cd ..
 npm run dev
 ```
 
