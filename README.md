@@ -23,6 +23,20 @@ In the project directory, you can run the following scripts:
 - **`npm run dev:studio`**: Opens Prisma Studio for database management.
 - **`npm run dev`**: Runs the backend, frontend, cypress and Prisma Studio concurrently, allowing for a seamless development experience across the full stack.
 
+## Clone the project
+
+To clone the project run the following inside you terminal at your desired directory.
+
+```bash
+git clone git@github.com:mnield84/chemify-todo.git
+```
+
+Once cloned cd into the project root.
+
+```bash
+cd chemify-todo
+```
+
 ## Getting Started
 
 To get started with developing on chemify-mn, you can set up the entire project by running at the root level of the project:
