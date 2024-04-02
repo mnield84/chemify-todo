@@ -88,7 +88,11 @@ const TodoList: React.FC<TodoListProps> = ({ todos, onUpdate, onDelete }) => {
     <Paper mt="md">
       <List className="todo-list">
         {sortedTodos?.map((todo) => (
-          <List.Item key={todo.id} className="todo-list-item">
+          <List.Item
+            key={todo.id}
+            className="todo-list-item"
+            data-testid={`todo-${todo.id}`}
+          >
             {editId === todo.id ? (
               <form onSubmit={handleSubmit(handleSave)}>
                 <TextInput

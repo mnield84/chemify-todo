@@ -32,7 +32,7 @@ function App() {
   return (
     <main className="todo-container" aria-labelledby="main-title">
       <Flex direction="row" align="center">
-        <Title order={1} id="main-title">
+        <Title order={1} id="main-title" data-testid="cypress-main-title">
           Todos
         </Title>
 

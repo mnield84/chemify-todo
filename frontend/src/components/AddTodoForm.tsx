@@ -35,13 +35,14 @@ export const AddTodoForm = ({ onClose }: AddTodoFormProps) => {
 
   return (
     <Box mx="auto" py={20}>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form onSubmit={handleSubmit(onSubmit)} data-testid="create-todo-form">
         <TextInput
           label="Title"
           placeholder="Enter todo title"
           {...register("title")}
           error={errors.title?.message}
           id="title"
+          name="title"
         />
         <Button type="submit" mt="md">
           Create Todo
