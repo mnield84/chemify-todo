@@ -19,8 +19,9 @@ In the project directory, you can run the following scripts:
 - **`npm run install:all`**: Runs a series of commands to set up both backend and frontend dependencies, generate Prisma client, and seed the database. This is a comprehensive setup command to prepare the entire application for development.
 - **`npm run dev:backend`**: Starts the backend development server.
 - **`npm run dev:frontend`**: Launches the frontend development server.
+- **`npm run cy:open`**: Launches cypress testing suite.
 - **`npm run dev:studio`**: Opens Prisma Studio for database management.
-- **`npm run dev`**: Runs the backend, frontend, and Prisma Studio concurrently, allowing for a seamless development experience across the full stack.
+- **`npm run dev`**: Runs the backend, frontend, cypress and Prisma Studio concurrently, allowing for a seamless development experience across the full stack.
 
 ## Getting Started
 
@@ -41,3 +42,7 @@ Once the setup is complete, you can start the development servers for both front
 ```bash
 npm run dev
 ```
+
+You can view the application locally at:
+
+[Chemify-mn](http://localhost:5173 "Todos")

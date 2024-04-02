@@ -12,8 +12,9 @@
     "install:all": "npm run install:backend && npm run generate:prisma && npm run prisma:seed && npm run install:frontend",
     "dev:backend": "cd backend && yarn dev",
     "dev:frontend": "cd frontend && npm run dev",
+    "cy:open": "cd frontend && npm run cypress:open",
     "dev:studio": "cd backend && npx prisma studio", 
-    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\" \"npm run dev:studio\"" 
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\" \"npm run dev:studio\" \"npm:cy:open\""
   },
   "keywords": [],
   "author": "",

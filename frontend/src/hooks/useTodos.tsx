@@ -1,11 +1,10 @@
-// hooks/useTodos.ts
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import {
   getAllTodos,
   createTodo,
   updateTodo,
   deleteTodo,
-} from "../services/todoService"; // Ensure UpdateTodoArgs is imported
+} from "../services/todoService";
 
 export const useTodos = () => {
   const queryClient = useQueryClient();
