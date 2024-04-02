@@ -1,12 +1,12 @@
 describe('chemify todo', () => {
   it('renders defualt elements on the screen', () => {
-    cy.visit('http://localhost:5173/')
+    cy.visit('http://localhost:5174/')
 
     cy.get('[data-testid="cypress-main-title"]').should('exist').should('have.text', 'Todos')
   })
 
   it('rendres the todo list on the screen', () => {
-     cy.visit('http://localhost:5173/')
+     cy.visit('http://localhost:5174/')
   })
 })
 
@@ -18,7 +18,7 @@ describe('TodoList Component', () => {
     }).as('getTodos');
 
     // Visit the page
-      cy.visit('http://localhost:5173/')
+      cy.visit('http://localhost:5174/')
 
     // Wait for the API call to complete
     cy.wait('@getTodos');
@@ -30,7 +30,7 @@ describe('TodoList Component', () => {
 
 describe('Create Todo Form', () => {
   it('displays the form when the "Create Todo" button is clicked', () => {
-    cy.visit('http://localhost:5173/')
+    cy.visit('http://localhost:5174/')
 
     cy.contains('button', 'Create Todo').click();
 
