@@ -24,13 +24,19 @@ In the project directory, you can run the following scripts:
 
 ## Getting Started
 
-To get started with developing on chemify-mn, you can set up the entire project by running:
+To get started with developing on chemify-mn, you can set up the entire project by running at the root level of the project:
 
 ```bash
 npm run install:all
 ```
 
-Once the setup is complete, you can start the development servers for both frontend and backend by running
+Once that has run if you navigate to the frontend directory and create a .env file and paste the following:
+
+```bash
+VITE_API_BASE_URL=http://localhost:8080
+```
+
+Once the setup is complete, you can start the development servers for both frontend and backend by running the following commmand at the root of the project.
 
 ```bash
 npm run dev
